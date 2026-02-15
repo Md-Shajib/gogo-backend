@@ -1,9 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/md-shajib/gogo-backend/cmd"
+)
 
 
 
 func main() {
 	fmt.Println("GOGO-Backend Starting...")
+	cmd.Execute()
 }
