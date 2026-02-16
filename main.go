@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/md-shajib/gogo-backend/cmd"
+	"github.com/md-shajib/gogo-backend/pkg/cmd"
 )
 
 
