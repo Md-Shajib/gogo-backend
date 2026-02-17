@@ -6,13 +6,18 @@ import (
 	"github.com/spf13/cobra"
 )
 
-var rootCmd = &cobra.Command{
-	Use:   "gogo-backend",
-	Short: "Gogo Backend CLI starting...",
-}
+var (
+	cfgFile 					string
+	prettyPrintLog, verbose		bool
+	rootCmd = &cobra.Command{
+		Use:   "gogo",
+		Short: "Gogo Backend CLI",
+	}
+)
 
 func Execute() {
-	if err := rootCmd.Execute(); err != nil {
+	err := rootCmd.Execute();
+	if err != nil {
 		os.Exit(1)
 	}
 }
