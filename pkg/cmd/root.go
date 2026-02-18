@@ -12,6 +12,9 @@ var (
 	rootCmd = &cobra.Command{
 		Use:   "gogo",
 		Short: "Gogo Backend CLI",
+		PersistentPreRun: func(cmd *cobra.Command, args []string) {
+			
+		},
 	}
 )
 
